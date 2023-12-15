@@ -1,0 +1,15 @@
+name: LightChat
+main: petterim1.lightchat.Main
+version: "${pom.version}"
+api: ["1.0.0"]
+author: PetteriM1
+softdepend: ["PlaceholderAPI", "LuckPerms", "Multipass"]
+website: https://cloudburstmc.org/resources/lightchat.661/
+commands:
+  lightchat:
+    permission: "lightchat.admin"
+    description: "Configure LightChat"
+    usage: "/lightchat <reload>"
+permissions:
+  lightchat.admin:
+    default: op

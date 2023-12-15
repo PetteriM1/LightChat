@@ -1,0 +1,83 @@
+# LightChat for Nukkit
+# Made by PetteriM1
+
+# config version
+# do not edit
+configVersion: 2
+
+# enable anti spam
+antiSpam: false
+# minimum delay between messages when 'antiSpam' is enabled (ticks)
+antiSpamThreshold: 20
+# message that is sent to players when they chat too fast
+antispamMessage: "§cYou are chatting too fast"
+# limit unicode characters in chat
+limitUnicode: false
+# replace unicode characters with this character when 'limitUnicode' is enabled
+replaceUnicode: "?"
+# don't send message if it equals to previous message
+duplicatedMessageCheck: false
+# how long previous message is stored when 'duplicatedMessagesCheck' is enabled (ticks)
+duplicatedMessageThreshold: 200
+# message that is sent to players when they chat too fast
+duplicatedMessageMessage: "§cDuplicated message"
+# maximum message length
+maxMessageLength: 200
+# message that is sent to players when their message is too long
+messageTooLongMessage: "§cYour message is too long"
+# remove colors from messages before applying the format
+# prevents players from trying to bypass your formatting
+cleanMessages: true
+
+# filtered words
+filter:
+#  - "example1"
+#  - "example2"
+
+# replace filtered words with this
+replaceFilter: "****"
+
+# blacklisted words
+# all messages that contain blacklisted words are cancelled
+blacklist:
+#  - "example1"
+#  - "example2"
+
+# message that is sent to players when their message contains blacklisted words
+blacklistMessage: "§cYour message contains blacklisted words"
+
+# default message format
+# used when no custom format is set for a group
+defaultFormat: "<%event_player%> %event_message%"
+
+# per group message formats
+format:
+  default: "<%event_player%> %event_message%"
+#  example1: "§5[Example 1] §a%event_player%§f: %event_message%"
+#  example2: "§7<§6%event_player%§7> §a%event_message%"
+
+# enable display name formatting
+formatDisplayName: false
+
+# default display name format
+# used when no custom format is set for a group
+defaultNameFormat: "%username%"
+
+# per group display name formats when 'formatDisplayName' is enabled
+nameFormat:
+  default: "%username%"
+#  example1: "§e[Example] §7%username%"
+#  example2: "§d%username%"
+
+# use section sign (§) to add colors in any message
+
+# placeholders for chat message formatting:
+# %event_player% - name of the message sender
+# %event_player_display% - display name of the message sender
+# %event_message% - the message
+
+# placeholders for display name formatting:
+# %username% - name of the player
+# %displayname% - display name of the player (use if you have other plugins that change it)
+
+# see PlaceholderAPI's documentation for more placeholders
